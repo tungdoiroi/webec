@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="col-12">
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="/addProduct">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="/listProduct">List of Product</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <hr>
+    <h3 class="text-center">Add Product</h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+        <div class="card-body">
+          <form action="/addProduct" method="post"enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="name">Product Name</label>
+              <input type="text" name="name" id="name" class="form-control">
+              <label for="price">Product price</label>
+              <input type="text" name="price" id="price" class="form-control">
+              <label for="description">Product Description</label>
+              <input type="text" name="description" id="description" class="form-control">
+
+              <div class="custom-file mb-4">
+                <label>Add an image</label>
+                <input type="file" name="file" class="custom-file-input"
+                       id="customFile"> <label class="custom-file-label" for="customFile">Product Image</label>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+<!-- Bootstrap JS & jQuery -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
